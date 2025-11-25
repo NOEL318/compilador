@@ -41,6 +41,8 @@
         display: flex;
         flex: 1;
         overflow: hidden;
+        flex-wrap: wrap;
+        flex-direction: row;
       }
 
       .panel {
@@ -49,6 +51,7 @@
         flex-direction: column;
         padding: 10px;
         border-right: 1px solid var(--border-color);
+        min-width: 500px;
       }
 
       .panel:last-child {
@@ -129,10 +132,21 @@
           spellcheck="false"
           placeholder="Escribe tu código aquí..."
         >
-var int x = 10;
-var int y = 20;
-var int resultado = x + y;
-print(resultado);
+
+var int costo = 100;
+var int impuesto = 20;
+var int total = 0;
+
+# 1. Prueba de asignación y suma simple
+# El interprete debería calcular 100 + 20 = 120
+
+total = costo + impuesto;
+
+# dato1 = total + 10
+# t2 = t1 + 5
+#total = t2
+
+total = total + 10 + 5;
         </textarea>
       </div>
       <div class="panel">
