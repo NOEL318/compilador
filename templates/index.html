@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini-Compiler Web | Noel</title>
+    <title>Compilador Web de Proyecto de Compilador</title>
     <style>
       :root {
         --bg-color: #1e1e1e;
@@ -120,13 +120,13 @@
   </head>
   <body>
     <header>
-      <h1>🚀 Mini-Compiler IDE Web</h1>
+      <h1>Compilador Web de Proyecto de Compilador</h1>
       <button onclick="compileCode()">▶ EJECUTAR</button>
     </header>
 
     <div class="container">
       <div class="panel">
-        <div class="label">📝 CÓDIGO FUENTE (.src)</div>
+        <div class="label">CÓDIGO FUENTE (.src)</div>
         <textarea
           id="sourceCode"
           spellcheck="false"
@@ -150,7 +150,7 @@ total = total + 10 + 5;
         </textarea>
       </div>
       <div class="panel">
-        <div class="label">💻 SALIDA DEL COMPILADOR</div>
+        <div class="label">SALIDA DEL COMPILADOR</div>
         <div id="output">Esperando ejecución...</div>
       </div>
     </div>
@@ -170,8 +170,6 @@ total = total + 10 + 5;
           });
 
           const data = await response.json();
-
-          // Formatear colores (similar a tu UI de Python)
           const formattedText = formatOutput(data.output);
           outputDiv.innerHTML = formattedText;
         } catch (error) {
