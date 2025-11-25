@@ -1,0 +1,15 @@
+
+var int costo = 100;
+var int impuesto = 20;
+var int total = 0;
+
+# 1. Prueba de asignación y suma simple
+# El interprete debería calcular 100 + 20 = 120
+
+total = costo + impuesto;
+
+# dato1 = total + 10
+# t2 = t1 + 5
+#total = t2
+
+total = total + 10 + 5;
